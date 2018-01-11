@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="OuOAModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Ou_UserInfo">
+          <Key>
+            <PropertyRef Name="uId" />
+          </Key>
+          <Property Name="uId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="uDepId" Type="int" Nullable="false" />
+          <Property Name="uLoginName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="uPwd" Type="char" MaxLength="32" Nullable="false" />
+          <Property Name="uGender" Type="bit" Nullable="false" />
+          <Property Name="uPost" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="uRemark" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="uIsDel" Type="bit" Nullable="false" />
+          <Property Name="uAddTime" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="OuOAModelStoreContainer">
+          <EntitySet Name="Ou_UserInfo" EntityType="Self.Ou_UserInfo" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="OuOAModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Ou_UserInfo">
+          <Key>
+            <PropertyRef Name="uId" />
+          </Key>
+          <Property Name="uId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="uDepId" Type="Int32" Nullable="false" />
+          <Property Name="uLoginName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="uPwd" Type="String" MaxLength="32" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="uGender" Type="Boolean" Nullable="false" />
+          <Property Name="uPost" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="uRemark" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="uIsDel" Type="Boolean" Nullable="false" />
+          <Property Name="uAddTime" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityContainer Name="OuOAEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Ou_UserInfo" EntityType="Self.Ou_UserInfo" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="OuOAModelStoreContainer" CdmEntityContainer="OuOAEntities">
+          <EntitySetMapping Name="Ou_UserInfo">
+            <EntityTypeMapping TypeName="OuOAModel.Ou_UserInfo">
+              <MappingFragment StoreEntitySet="Ou_UserInfo">
+                <ScalarProperty Name="uId" ColumnName="uId" />
+                <ScalarProperty Name="uDepId" ColumnName="uDepId" />
+                <ScalarProperty Name="uLoginName" ColumnName="uLoginName" />
+                <ScalarProperty Name="uPwd" ColumnName="uPwd" />
+                <ScalarProperty Name="uGender" ColumnName="uGender" />
+                <ScalarProperty Name="uPost" ColumnName="uPost" />
+                <ScalarProperty Name="uRemark" ColumnName="uRemark" />
+                <ScalarProperty Name="uIsDel" ColumnName="uIsDel" />
+                <ScalarProperty Name="uAddTime" ColumnName="uAddTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

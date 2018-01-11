@@ -1,0 +1,13 @@
+C:\CSharpProjects\OA\OA.Factory\obj\Debug\OA.DALFactory.csprojResolveAssemblyReference.cache
+C:\CSharpProjects\OA\OA.Factory\bin\Debug\OA.Factory.dll
+C:\CSharpProjects\OA\OA.Factory\bin\Debug\OA.Factory.pdb
+C:\CSharpProjects\OA\OA.Factory\bin\Debug\EntityFramework.dll
+C:\CSharpProjects\OA\OA.Factory\bin\Debug\OA.DAL.dll
+C:\CSharpProjects\OA\OA.Factory\bin\Debug\OA.IDAL.dll
+C:\CSharpProjects\OA\OA.Factory\bin\Debug\OA.Model.dll
+C:\CSharpProjects\OA\OA.Factory\bin\Debug\OA.DAL.pdb
+C:\CSharpProjects\OA\OA.Factory\bin\Debug\OA.IDAL.pdb
+C:\CSharpProjects\OA\OA.Factory\bin\Debug\OA.Model.pdb
+C:\CSharpProjects\OA\OA.Factory\bin\Debug\EntityFramework.xml
+C:\CSharpProjects\OA\OA.Factory\obj\Debug\OA.Factory.dll
+C:\CSharpProjects\OA\OA.Factory\obj\Debug\OA.Factory.pdb
